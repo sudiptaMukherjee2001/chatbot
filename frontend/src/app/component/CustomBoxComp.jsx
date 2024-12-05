@@ -1,7 +1,17 @@
 import React from 'react'
 import { CustomBox } from '../styles/CustomBox.style.js'
 
-const CustomBoxComp = ({ Width, Height, children, Position, Bottom, Margin }) => {
+const CustomBoxComp = ({ Overflow,
+    Width,
+    Height,
+    children,
+    Position,
+    Bottom,
+    Margin,
+    PaddingInline,
+    PaddingBlock,
+    lineHeight
+}) => {
     return (
         <CustomBox
             width={Width}
@@ -9,6 +19,10 @@ const CustomBoxComp = ({ Width, Height, children, Position, Bottom, Margin }) =>
             position={Position}
             bottom={Bottom}
             margin={Margin}
+            overflow={Overflow}
+            paddingInline={PaddingInline}
+            paddingBlock={PaddingBlock}
+            lineHeight={lineHeight}
         // Right={Right}
 
 

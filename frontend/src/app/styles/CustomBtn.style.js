@@ -9,8 +9,10 @@ import { styled, createTheme, } from '@mui/system';
     },
 }); */
 
-export const CustomBtn = styled(Button)(({ theme, width, fontWeight }) => ({
+export const CustomBtn = styled(Button)(({ theme, width, fontWeight, color, backgroundColor }) => ({
     width: width ? `${width}%` : "0px",
     fontWeight: fontWeight ? `${fontWeight}` : 0,
-    border: "3px solid red"
+    color: color ? `${color}` : "none",
+    backgroundColor: backgroundColor ? `${backgroundColor}` : "none",
+    // border: "3px solid red"
 }));
