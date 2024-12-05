@@ -8,7 +8,6 @@ import Grid from '@mui/material/Grid2'
 import CustomBtnComp from './component/CustomBtnComp.jsx'
 import ReactMarkDown from "react-markdown"
 import Loading from './loading.js'
-import ResponseData from './data.jsx'
 
 
 
@@ -79,7 +78,7 @@ const page = () => {
         </Grid>
       </CustomBoxComp>
       {/* below box will display the response of the prompt */}
-      <CustomBoxComp BR="10px" Width="100" Height="82" Overflow="auto" PaddingInline="2rem" PaddingBlock="1rem" lineHeight="1.8rem" resBg={true}>
+      <CustomBoxComp BR="10px" Width="100" Height="80" Overflow="auto" PaddingInline="2rem" PaddingBlock="1rem" lineHeight="1.8rem" resBg={true}>
 
         {
           hlperTextDisplay ? <p className='helperText'>{helperText}</p> :
