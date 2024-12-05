@@ -33,7 +33,7 @@ const page = () => {
 
       setdata(res);  // Set response data
       setTimeout(() => {
-        // setLoading(false);  // Hide loading spinner after fetching the response
+        setLoading(false);  // Hide loading spinner after fetching the response
 
       }, 4000)
 
