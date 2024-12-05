@@ -6,7 +6,7 @@ const CustomInputComp = ({ Width, Height, inputRef }) => {
 
     return (
         <ThemeProvider theme={customTheme}>
-            <CustomInput type="text" width={Width} Height={Height} ref={inputRef} />
+            <CustomInput type="text" width={Width} Height={Height} ref={inputRef} placeholder='ask me anything ...' />
         </ThemeProvider>
     )
 }

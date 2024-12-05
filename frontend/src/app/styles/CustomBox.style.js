@@ -1,4 +1,4 @@
-import { styled, createTheme, Box } from '@mui/system';
+import { styled, createTheme, Box, fontSize, border, display, textAlign } from '@mui/system';
 /* export const customTheme = createTheme({
     palette: {
         primary: {
@@ -17,7 +17,7 @@ import { styled, createTheme, Box } from '@mui/system';
     },
 }); */
 
-export const CustomBox = styled(Box)(({ theme, width, height, position, bottom, margin, overflow, paddingInline, paddingBlock, lineHeight }) => ({
+export const CustomBox = styled(Box)(({ theme, borderRadius, width, height, position, bottom, margin, overflow, paddingInline, paddingBlock, lineHeight, background, paddingBottom }) => ({
     width: width ? `${width}%` : 'none',
     height: height ? `${height}vh` : 'none',
     position: position ? `${position}` : 'none',
@@ -28,9 +28,11 @@ export const CustomBox = styled(Box)(({ theme, width, height, position, bottom, 
     paddingInline: paddingInline ? `${paddingInline}` : 'none',
     paddingBlock: paddingBlock ? `${paddingBlock}` : 'none',
     lineHeight: lineHeight ? `${lineHeight}` : 'none',
+    borderRadius: borderRadius ? `${borderRadius}` : 'none',
     //right: Right ? `${Right}px` : 'none',
+    paddingBottom: paddingBottom ? `${paddingBottom}` : "none",
+    // border: "2px solid red",
 
-    //border: "2px solid red",
     '&::-webkit-scrollbar': {
         width: '8px', // Width of the scrollbar
         height: '8px', // Height of the scrollbar (for horizontal scrollbars)
@@ -47,4 +49,29 @@ export const CustomBox = styled(Box)(({ theme, width, height, position, bottom, 
     '&::-webkit-scrollbar-thumb:hover': {
         backgroundColor: "#4b42d1", // Slightly darker shade for the thumb hover effect
     },
+    '& .helperText': {
+        fontSize: "2rem",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100%", /* Ensure it takes the full height of the parent */
+        margin: "0", /* Remove default margins */
+        textAlign: "center", /* Center text alignment */
+        fontSize: " 1.8rem", /* Optional: Adjust font size */
+        // border: "2px solid red"
+    },
+    '& .heading': {
+        // border: "2px solid red",
+        fontSize: "2rem",
+        textAlign: "center",
+        background: "rgba( 255, 255, 255, 0.1 )",
+        boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+        backdropFilter: "blur( 7px )",
+        borderRadius: "10px",
+        paddingBlock: "0.76rem",
+        width: "83%",
+        margin: "auto"
+
+    }
+
 }));

@@ -10,7 +10,10 @@ const CustomBoxComp = ({ Overflow,
     Margin,
     PaddingInline,
     PaddingBlock,
-    lineHeight
+    lineHeight,
+    resBg,
+    BR,
+    PaddingBottom
 }) => {
     return (
         <CustomBox
@@ -23,6 +26,9 @@ const CustomBoxComp = ({ Overflow,
             paddingInline={PaddingInline}
             paddingBlock={PaddingBlock}
             lineHeight={lineHeight}
+            background={resBg}
+            borderRadius={BR}
+            paddingBottom={PaddingBottom}
         // Right={Right}
 
 

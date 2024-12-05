@@ -16,4 +16,7 @@ export const CustomInput = styled('input')(({ theme, width, Height }) => ({
     border: "2px solid pink",
     width: width ? `${width}%` : '0px',
     height: Height ? `${Height}%` : '0px',
+    paddingBlock: "0.8rem",
+    background: "#1e293b",
+    border: 'none'
 }));

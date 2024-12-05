@@ -15,4 +15,6 @@ export const CustomBtn = styled(Button)(({ theme, width, fontWeight, color, back
     color: color ? `${color}` : "none",
     backgroundColor: backgroundColor ? `${backgroundColor}` : "none",
     // border: "3px solid red"
+    paddingBlock: "0.5rem",
+
 }));
