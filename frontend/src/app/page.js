@@ -63,10 +63,9 @@ const page = () => {
 
       >
         {/* this grid container is responsible for input box and send prompt button */}
-        {/* <Grid container border={"2px solid blue"} justifyContent={"center"} alignItems={"center"}> */}
         <Grid container justifyContent={"center"} alignItems={"center"} spacing={2}>
           {/* Input box */}
-          <Grid item size={{ xs: 6 }} >
+          <Grid item size={{ xs: 9, md: 6 }} >
             <CustomInputComp Width="100" Height="100" inputRef={inputRef} />
           </Grid>
           {/* Button */}
